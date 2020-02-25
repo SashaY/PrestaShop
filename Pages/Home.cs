@@ -7,10 +7,9 @@ namespace SeleniumFramework.Pages
     {
         private IWebDriver driver = null;
         private Util.Util util = null;
-
-        private By mainLogoXPath = By.XPath("//img[@class='menu-logo']");
+                
         private By homePagePrimaryLinkXPath = By.XPath("//div[@id='navbar-collapse-menu']//a[contains(@class,'prestashop-link primary-link')]");
-        private By productMenuXpath = By.XPath("//div[@id='header-menu']//a[text()='Product']");
+        private By resourcesMenuXpath = By.XPath("//div[@id='header-menu']//span[normalize-space()='Resources']");
         private By featureMenuXpath = By.XPath("//div[@id='header-menu']//a[text()='Features']");
 
         public Home(IWebDriver d)
@@ -22,20 +21,19 @@ namespace SeleniumFramework.Pages
         public bool IsHomePageLoaded()
             => util.IsElementVisible(homePagePrimaryLinkXPath);
 
-        public bool ClickProductMenu()
-            => util.ClickElement(productMenuXpath);
+        public bool ClickResourcesMenu()
+            => util.ClickElement(resourcesMenuXpath);
 
-        public bool HoverProductMenu()
-            => util.HoverElement(productMenuXpath);
+        public bool HoverResourcesMenu()
+            => util.HoverElement(resourcesMenuXpath);
 
         public bool ClickFeatureMenu()
             => util.ClickElement(featureMenuXpath);
 
         public void OpenHome()
         {
-            driver.Navigate().GoToUrl("https://www.prestashop.com/en");
+            driver.Navigate().GoToUrl("https://www.prestashop.com/en?ab=1");
             driver.Manage().Window.FullScreen();
-            util.ClickElement(mainLogoXPath);
             util.CaptureScreenshot();
         }
     }

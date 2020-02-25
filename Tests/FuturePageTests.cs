@@ -34,7 +34,7 @@ namespace SeleniumFramework.Tests
         public void TestGoToFeaturePage()
         {
             home.OpenHome();
-            home.HoverProductMenu();
+            home.HoverResourcesMenu();
             home.ClickFeatureMenu();
             gettingStarted.isFeaturePageLoaded().Should().BeTrue();
             Console.WriteLine("Clicked on Feature Menu");
@@ -44,7 +44,7 @@ namespace SeleniumFramework.Tests
         public void TestFeaturePage()
         {
             home.OpenHome();
-            home.HoverProductMenu();
+            home.HoverResourcesMenu();
             home.ClickFeatureMenu();
             gettingStarted.isFeaturePageLoaded().Should().BeTrue();
             gettingStarted.clickLegalLink();
