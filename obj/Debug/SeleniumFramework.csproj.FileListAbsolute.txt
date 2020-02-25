@@ -83,8 +83,9 @@ C:\JenkinsProjects\PrestaShop\bin\Debug\FluentAssertions.xml
 C:\JenkinsProjects\PrestaShop\bin\Debug\System.ValueTuple.xml
 C:\JenkinsProjects\PrestaShop\bin\Debug\WebDriver.xml
 C:\JenkinsProjects\PrestaShop\bin\Debug\WebDriver.Support.xml
-C:\JenkinsProjects\PrestaShop\obj\Debug\SeleniumFramework.csprojAssemblyReference.cache
 C:\JenkinsProjects\PrestaShop\obj\Debug\SeleniumFramework.csproj.CoreCompileInputs.cache
 C:\JenkinsProjects\PrestaShop\obj\Debug\SeleniumFramework.csproj.CopyComplete
 C:\JenkinsProjects\PrestaShop\obj\Debug\SeleniumFramework.dll
 C:\JenkinsProjects\PrestaShop\obj\Debug\SeleniumFramework.pdb
+C:\JenkinsProjects\PrestaShop\bin\Debug\nunit.exe
+C:\JenkinsProjects\PrestaShop\bin\Debug\nunit.exe.config

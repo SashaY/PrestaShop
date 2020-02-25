@@ -30,11 +30,11 @@ namespace SeleniumFramework.Pages
         public bool ClickFeatureMenu()
             => util.ClickElement(featureMenuXpath);
 
-        public void OpenHome(string url)
+        public void OpenHome()
         {
-            driver.Navigate().GoToUrl(url);
+            driver.Navigate().GoToUrl("https://www.prestashop.com/en");
             driver.Manage().Window.FullScreen();
             util.CaptureScreenshot();
-        }
+    }
     }
 }

@@ -13,7 +13,6 @@ namespace SeleniumFramework.Tests
         IWebDriver driver = null;
         GettingStarted gettingStarted = null;
         Home home = null;
-        private string homePageLink = "https://www.prestashop.com/en";
         
         [OneTimeSetUp]
         public void Initialize()
@@ -26,7 +25,7 @@ namespace SeleniumFramework.Tests
         [Test]
         public void TestHomePage()
         {
-            home.OpenHome(homePageLink);
+            home.OpenHome();
             home.IsHomePageLoaded().Should().BeTrue();
             Console.WriteLine("App is launched successfully");
         }
@@ -34,7 +33,7 @@ namespace SeleniumFramework.Tests
         [Test]
         public void TestGoToFeaturePage()
         {
-            home.OpenHome(homePageLink);
+            home.OpenHome();
             home.HoverProductMenu();
             home.ClickFeatureMenu();
             gettingStarted.isFeaturePageLoaded().Should().BeTrue();
@@ -44,7 +43,7 @@ namespace SeleniumFramework.Tests
         [Test]
         public void TestFeaturePage()
         {
-            home.OpenHome(homePageLink);
+            home.OpenHome();
             home.HoverProductMenu();
             home.ClickFeatureMenu();
             gettingStarted.isFeaturePageLoaded().Should().BeTrue();
