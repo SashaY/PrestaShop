@@ -8,6 +8,7 @@ namespace SeleniumFramework.Pages
         private IWebDriver driver = null;
         private Util.Util util = null;
 
+        private By mainLogoXPath = By.XPath("//img[@class='menu-logo']");
         private By homePagePrimaryLinkXPath = By.XPath("//div[@id='navbar-collapse-menu']//a[contains(@class,'prestashop-link primary-link')]");
         private By productMenuXpath = By.XPath("//div[@id='header-menu']//a[text()='Product']");
         private By featureMenuXpath = By.XPath("//div[@id='header-menu']//a[text()='Features']");
@@ -34,7 +35,8 @@ namespace SeleniumFramework.Pages
         {
             driver.Navigate().GoToUrl("https://www.prestashop.com/en");
             driver.Manage().Window.FullScreen();
+            util.ClickElement(mainLogoXPath);
             util.CaptureScreenshot();
-    }
+        }
     }
 }

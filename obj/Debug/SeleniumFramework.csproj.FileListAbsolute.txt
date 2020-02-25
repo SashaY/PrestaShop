@@ -89,3 +89,4 @@ C:\JenkinsProjects\PrestaShop\obj\Debug\SeleniumFramework.dll
 C:\JenkinsProjects\PrestaShop\obj\Debug\SeleniumFramework.pdb
 C:\JenkinsProjects\PrestaShop\bin\Debug\nunit.exe
 C:\JenkinsProjects\PrestaShop\bin\Debug\nunit.exe.config
+C:\JenkinsProjects\PrestaShop\obj\Debug\SeleniumFramework.csprojAssemblyReference.cache
