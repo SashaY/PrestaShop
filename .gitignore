@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs/SeleniumFramework/v15/Server/sqlite3
+/packages/NUnit.2.6.4
+/.vs/SeleniumFramework/v15
