@@ -13,7 +13,7 @@ namespace SeleniumFramework.Tests
         IWebDriver driver = null;
         GettingStarted gettingStarted = null;
         Home home = null;
-        
+
         [OneTimeSetUp]
         public void Initialize()
         {

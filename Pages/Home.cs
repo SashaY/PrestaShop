@@ -7,7 +7,7 @@ namespace SeleniumFramework.Pages
     {
         private IWebDriver driver = null;
         private Util.Util util = null;
-                
+
         private By homePagePrimaryLinkXPath = By.XPath("//div[@id='header-menu']//a[contains(@class,'prestashop-link primary-link')]");
         private By resourcesMenuXpath = By.XPath("//div[@id='header-menu']//span[normalize-space()='Resources']");
         private By featureMenuXpath = By.XPath("//div[@id='header-menu']//a[text()='Features']");
